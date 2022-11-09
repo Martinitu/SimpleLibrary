@@ -5,6 +5,13 @@ let myLibrary = [
 ]
 console.log(myLibrary)
 
+document.querySelector(".addBook").addEventListener("click", function(){
+    document.querySelector(".popup").classList.add("active");
+})
+document.querySelector(".popup .closeButton").addEventListener("click",function(){
+    document.querySelector(".popup").classList.remove("active");
+})
+
 
 
 function Book(title, author, pages, read) {
@@ -18,6 +25,11 @@ function Book(title, author, pages, read) {
     }
 }
 
+
+
 function addBookToLibrary() {
+    
+    new Book(title, author, pages, read)
+
   
   }
