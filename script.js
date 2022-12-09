@@ -16,11 +16,14 @@ document.querySelector(".popup .closeButton").addEventListener("click",function(
 
 
 
-function Book(title, author, pages, read) {
+class Book {
+  constructor(title, author, pages, read) {
     this.title = title
     this.author = author
     this.pages = pages
     this.read = read
+
+  }
    /* this.info = function(){
         let info = title + " by" + author + ", " + pages + ", " + read ;
         return info;
